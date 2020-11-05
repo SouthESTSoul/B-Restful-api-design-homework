@@ -1,6 +1,6 @@
-package com.thoughtworks.capability.gtb.restfulapidesign.impl;
+package com.thoughtworks.capability.gtb.restfulapidesign.service.impl;
 
-import com.thoughtworks.capability.gtb.restfulapidesign.StudentService;
+import com.thoughtworks.capability.gtb.restfulapidesign.service.StudentService;
 import com.thoughtworks.capability.gtb.restfulapidesign.dto.Student;
 import com.thoughtworks.capability.gtb.restfulapidesign.dto.StudentGroup;
 import com.thoughtworks.capability.gtb.restfulapidesign.repository.StudentRepository;

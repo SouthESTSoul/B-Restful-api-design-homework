@@ -1,4 +1,4 @@
-package com.thoughtworks.capability.gtb.restfulapidesign;
+package com.thoughtworks.capability.gtb.restfulapidesign.service;
 
 import com.thoughtworks.capability.gtb.restfulapidesign.dto.Student;
 import com.thoughtworks.capability.gtb.restfulapidesign.dto.StudentGroup;
