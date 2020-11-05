@@ -13,10 +13,13 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class StudentGroup {
+    int id;
     String groupName;
+    String note;
     List<Student> students =new ArrayList<>();
 
-    public StudentGroup(String groupName) {
+    public StudentGroup(int id,String groupName) {
+        this.id=id;
         this.groupName = groupName;
     }
 

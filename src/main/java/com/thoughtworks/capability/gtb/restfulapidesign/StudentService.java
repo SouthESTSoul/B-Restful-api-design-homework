@@ -7,9 +7,11 @@ import java.util.List;
 
 public interface StudentService {
 
-    List<Student> getStudents();
+    List<Student> getStudents(String gender);
     void groupStudentRandomly();
     List<StudentGroup>getStudentGroups();
-    void addStudent(Student student);
+    Student addStudent(Student student);
     Student getStudentById(int id);
+    void deleteStudentById(int id);
+    StudentGroup modifyGroupNameById(int id,String name);
 }
