@@ -11,6 +11,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -68,5 +69,11 @@ public class StudentServiceImpl implements StudentService {
     public void addStudent(Student student) {
         student.setId(studentRepository.studentNumber.incrementAndGet());
         StudentRepository.studentDB.add(student);
+    }
+
+    @Override
+    public Student getStudentById(int id) {
+        List<Student> studentsById = StudentRepository.studentDB.stream().filter(student -> student.getId() == id).collect(Collectors.toList());
+        return studentsById.get(0);
     }
 }
